@@ -1,0 +1,143 @@
+@import "../../assets/static/scss/mixin.scss";
+
+.nav-bar-master{
+    width: 100vw;
+    height: 120px;
+    background-color: #FFFFFF;
+    border-bottom: 0.5px solid #E5E5E5;
+    font-family: 'Poppins' !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-bar-full-main{
+    width: 95vw;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.full-logo-box{
+    width: 170px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center; 
+}
+
+.logo-image{
+    height: 70px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.logo-text{
+    font-size: 20px;
+    font-weight: 800 !important;
+    color: #16161A;
+}
+
+.nav-search-box{
+    margin: 0px 20px;
+    width: calc(35vw - 210px);
+    height: 45px;
+    background-color: rgba(22, 22, 26, 0.04);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 15px;
+    &:hover{
+        border: 0.5px solid #E5E5E5;
+    }
+}
+
+.search-icon{
+    height: 15px;
+    width: 15px;
+    margin-right: 20px;
+}
+
+.searchBox{
+    height: 35px;
+    width: 70%;
+    border: none;
+    background-color: transparent;
+    color: #16161A;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-weight: 700;
+    font-size: 16px;  
+    color: #16161A;
+    opacity: 0.25;
+  }
+
+.nav-menu-box{
+    display: flex;
+    justify-content: space-between;
+    width: calc(59vw - 210px);
+}
+
+.nav-menu{
+    display: flex;
+    // justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;  
+    color: #16161A;
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.nav-menu1{
+    display: flex;
+    // justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;  
+    color: #16161A;
+    opacity: 0.2; 
+}
+
+.nav-btn{
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background-color: #16161A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 15px;
+    @include btn-animate(#FFFFFF);
+}
+
+.nav-bag-box{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    &:hover{
+        transform: scale(1.05);
+        transition: all ease .3s;
+    }
+}
+
+.nav-bag{
+    height: 30px;
+    width: 30px;
+}
