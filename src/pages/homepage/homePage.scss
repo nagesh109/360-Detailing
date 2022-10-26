@@ -1,6 +1,249 @@
+.home-master{
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+}
+
+.main-nav{
+    top:0;
+    position: fixed;
+    z-index: 4;
+}
 
 .home-page-main{
-    padding-top: 30px;
-    width: 95vw;
+    width: 100vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.home-sec1{
+    height: 550px;
+    background-image: url('../../assets/images/home/maincover.svg');
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.home-sec1-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-sec1-title{
+    font-weight: 300;
+    font-size: 3vw;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.option-box{
+    margin-top: 45px;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-main-box{
+    background-color: #FFFFFF;
+    height: 55px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    padding: 0px 15px;
+}
+
+.city-data{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #646464;
+}
+
+.search-main-box{
+    background-color: #FFFFFF;
+    height: 55px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(60vw - 280px);
+    padding: 0px 15px;
+}
+
+.search-box, .search-img{
+    width: 16px;
+    height: 16px;
+}
+
+.seach-input{
+    margin-left: 20px;
+    width: calc(60vw - 340px);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #646464;
+    border: none;
+    outline: none;
+}
+
+.home-sec2{
+    margin: auto;
+    width: 60vw;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center ;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    margin-top: -70px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.each-sec2-menu{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    &:hover{
+        transform: scale(1.1);
+        transition: all .35s cubic-bezier(.19,1,.22,1);
+        font-weight: 800;
+    }
+}
+
+.sec2-img{
+    width: 55px;
+    height: 55px;
+    margin-bottom: 10px;
+}
+
+.home-sec3{
+    width: 80vw;
     margin: auto;
 }
+
+.sec3-title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    text-align: center;
+}
+
+.all-choose-menu{
+    margin: 40px 0px 90px 0px;
+    width: 80vw;
+}
+
+
+
+.each-choose-box{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 3px solid #0466E1;
+    border-radius: 20px;
+}
+
+.each-choose-img{
+    width: 70px;
+    height: 70px;
+}
+
+.each-choose-main-title{
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.each-choose-textbox{
+    display: none;
+}
+
+.each-choose-menu{
+    cursor: pointer;
+    width: 12vw;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.each-choose-menu:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 35vw;
+    transition: all ease .6s;
+    .each-choose-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .each-choose-main-title{
+        display: none;
+    }
+    .each-choose-textbox{
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .each-choose-title{
+        margin-top: 0px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #0466E1;
+        overflow: hidden;
+        white-space: pre-line;
+    }
+    .each-choose-desc{
+        display: block;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        overflow: hidden;
+        white-space: pre-line;
+    }
+}
+
+.home-sec4{
+    width: 100vw;
+    min-height: 500px;
+    background: rgba(4, 102, 225, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bbox{
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    width: 1px;
+    height: 150px; 
+    border-right: 1px solid #0466E1;
+}
+
+

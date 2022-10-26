@@ -17,24 +17,19 @@ const NavBar = () => {
                         <div className="logo-text">MARKETS</div>
                     </div> */}
                 </div>
-                <div className='nav-search-box'>
+                {/* <div className='nav-search-box'>
                     <img className="search-icon" src={search} alt="" />
                     <input className="searchBox" type="text" placeholder="Search Web3" />
-                </div>
-                <div className='nav-menu-box'>
-                    <div className='nav-menu'>Explore</div>
-                    <div className='nav-menu'>Create</div>
-                    <div className='nav-menu1'>Art Bank</div>
-                    <div className='nav-menu1'>Minting Engine</div>
-                    <div className='nav-menu1'>Brand NFTs</div>
-                    <div className='nav-menu1'>NFT Connect</div>
-                </div>
+                </div> */}
+                
             </div>
             <div className='nav-right'>
-                <div className='nav-btn'>Connect Wallet</div>
-                {/* <div className='nav-bag-box'>
-                    <img className='nav-bag' src={bag} alt="" />
-                </div> */}
+                <div className='nav-menu-box'>
+                    <div className='nav-menu'>About Us</div>
+                    <div className='nav-menu'>Apply for Franchise</div>
+                    <div className='nav-menu'>Become installer</div>
+                    <div className='nav-menu'>Login/Signup</div>
+                </div>
             </div>
         </div>
     </div>
